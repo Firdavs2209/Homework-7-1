@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+	 Delete news
+{% endblock %}
+
+
+
+
+{% block content %}
+	<h3>Delete news</h3>
+
+    <form action="" method="post" class="form">
+        {% csrf_token %}
+        {{ news_instance }}
+        <input type="submit" value="Delete news">
+    </form>
+{% endblock %}

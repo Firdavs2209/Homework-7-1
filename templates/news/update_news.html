@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+	Edit news
+{% endblock %}
+
+
+
+
+{% block content %}
+	<h3>Edit news</h3>
+
+    <form action="" method="post" class="form">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Edit news">
+    </form>
+{% endblock %}
